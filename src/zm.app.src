@@ -1,11 +1,15 @@
 {application, zm,
  [
-  {description, ""},
-  {vsn, "1"},
-  {registered, []},
+  {description, "Zombie master"},
+  {vsn, "0.0.1"},
+  {registered, [zm_sup]},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  crypto,
+                  public_key,
+                  ssl,
+                  cowboy
                  ]},
   {mod, { zm_app, []}},
   {env, []}
