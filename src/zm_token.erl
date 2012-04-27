@@ -3,7 +3,7 @@
 -export([validate/3]).
 
 -ifdef(TEST).
--export([split/1]).
+-export([split/1, clock/0, validate_int/3]).
 -endif.
 
 split(Token) ->
